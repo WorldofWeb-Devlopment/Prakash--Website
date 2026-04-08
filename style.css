@@ -572,3 +572,7 @@ a {
 }
 
 /* commsion container ends here */
+.footer p {
+    color: #5a43d6;
+    text-align: center;
+}
