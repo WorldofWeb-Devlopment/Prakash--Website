@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0f1115;
+    width: 100vw;
+    height: 100vh;
+}
+
+::selection {
+    background-color: #5943d685;
+}
+
+section {
+    /* background-color: #013E37;
+     width: 100%; */
+    /* background-color: #0f1115;
+     width: 100vw;
+     height: 100vh; */
+}
+
+/* Nav Bar Style starts here */
+/* .nav-bg{
+    background-color: #013E37;
+    width: 100%; 
+     position: fixed;
+    top: 0;
+    left: 0;
+   z-index: 999999;
+     
+ } */
+.art-text {
+    color: white;
+}
+
+.margin {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.nav-bar {
+     display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.nav-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0f1115;
+  z-index: 999;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.nav-bar h1 {
+    font-weight: bold;
+    color: #7b61ff;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-items a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.nav-items a:hover {
+    color: #7b61ff;
+}
+
+/* Nav Bar Style end here */
+
+/* Hero Section Starts Here*/
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.hero-content h1 {
+    color: #7b61ff;
+    font-size: 50px;
+}
+
+.span-text {
+    color: #ffffff;
+}
+
+.hero-content p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.btn {
+    background-color: #7b61ff;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all ease-in 0.5s;
+
+
+}
+
+.button-1 {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: #5a43d6;
+    box-shadow: 0 0 15px rgba(123, 92, 255, 0.6),
+        0 0 30px rgba(123, 92, 255, 0.4);
+    transform: translateY(-2px);
+
+}
+
+.hero-content .first-heading {
+    font-size: 15px;
+    font-weight: 250;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.artist-bg {
+    background-color: #22252e;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.artist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+
+
+}
+
+.artist-img {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    background: rgba(10, 10, 10, 0.6);
+    /* glass effect */
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        inset 0 0 30px rgba(255, 255, 255, 0.03),
+        /* inner light */
+        0 0 20px rgba(0, 0, 0, 0.8);
+    /* outer depth */
+
+    position: relative;
+    transform: scale(1);
+}
+
+.artist-img::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 22px;
+
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0.08),
+            transparent,
+            rgba(255, 255, 255, 0.05));
+    z-index: -1;
+    filter: blur(8px);
+}
+
+.artist-img:hover {
+    box-shadow:
+        inset 0 0 40px rgba(255, 255, 255, 0.05),
+        0 0 30px rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    transition: 2s ease;
+    transform: rotate(-5deg);
+}
+
+.artist-intro h2 {
+    color: #a99aff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 29px;
+    text-align: center;
+}
+
+.artist-para-1 {
+    color: #a0a3bd;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.artist-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+}
+
+/* Art style starts here */
+.art-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    gap: 30px;
+}
+
+.art-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.icon-1 i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    /* vertical center */
+    justify-content: center;
+    /* horizontal center */
+    color: #9a84ff;
+    font-size: 16px;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.icon-1 p {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.art-text h1 {
+    color: #a99aff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 29px;
+    text-align: center;
+}
+
+.icon-1 i:hover {
+    box-shadow:
+        0 0 10px rgba(123, 97, 255, 0.2),
+        0 0 25px rgba(123, 97, 255, 0.1),
+        0 0 50px rgba(123, 97, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Art style ends here */
+/* Portfolio style start here */
+.portfolio-bg {
+    background-color: #22252e;
+    margin-bottom: 20px;  
+}
+
+.portfolio {
+    margin: 70px 0px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #b3bfe2;
+    text-transform: uppercase;
+}
+
+.portfolio h1 {
+    margin-bottom: 30px;
+    color: #a99aff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 29px;
+    text-align: center;
+}
+
+.achor-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.achor-buttons a {
+    border-radius: 20px;
+    padding: 15px;
+    border: #9b84ff59 solid 2px;
+    transition: all 0.5s ease-in;
+}
+
+.achor-buttons a:hover {
+    /* background-color: #5a43d6; */
+    box-shadow: 0 0 15px rgba(123, 92, 255, 0.2),
+        0 0 30px rgba(123, 92, 255, 0.4);
+    transform: scale(1.01);
+
+}
+
+.artist-img1 {
+   width: 100%;
+  height: 320px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background: #111; /* temporary */
+  transition: 0.4s ease;
+  margin-bottom: 50px;
+}
+
+.img-container{
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.img-details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding:20px;
+    /* margin-bottom: 30px; */
+    opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+.img-details h2{
+    color: #5a43d6;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+.img-details p {
+    color: white;
+    text-align: right;
+    font-size: 15px;
+}
+.artist-img1:hover .img-details{
+  opacity: 1;
+  transform: translateY(0);
+
+}
+.artist-img1:hover{
+      box-shadow:
+        inset 0 0 40px rgba(255, 255, 255, 0.05),
+        0 0 30px rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    transition: 2s ease;
+   
+}
+ /* Portfolio Showcase of work end here  */
+ /* Artist display start here */
+
+ .artwork-display-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .artwork-img{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    background: rgba(10, 10, 10, 0.6);
+    /* glass effect */
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        inset 0 0 30px rgba(255, 255, 255, 0.03),
+        /* inner light */
+        0 0 20px rgba(0, 0, 0, 0.8);
+    /* outer depth */
+    position: relative;
+    transform: scale(1);
+}
+.img-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.img-description h4{
+    color: white;
+   font-size: 20px;
+    font-weight: 250;
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+ .img-description h1{
+     color: #5a43d6;
+    font-size: 35px;
+ }
+ .img-description p{
+     color: #a0a3bd;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+ }
+ .img-description .para1{
+     color: #9a84ff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+ }
+ hr{
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    opacity: 1;
+ }
+ /* Artsit display ends here */
+ /* Artist statement starts here */
+ .artist-statement{
+   margin: 50px 0px;
+   padding-bottom: 20px;
+ }
+ .artist-statement p{
+    text-align: center;
+    font-size: 30px;
+   color: #a0a3bd;
+
+
+ }
+ .divider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.divider::before,
+.divider::after{
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: white;
+}
+
+.divider span{
+  padding: 5px 15px;
+  background: #5a43d6;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+/* Artist statement ends here */
+/* creative vision starts here */
+.vision-container{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.vision-container h1{
+    color: #5a43d6;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.vision-container p{
+    color:#a0a3bd;
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: jus;
+}
+/* creative vision ends here */
+/* commsion container starts here */
+.commison-container{
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.commison-container h1{
+    font-size: 70px;
+    color: white;
+}
+.commison-container .p1{
+   font-size: 30px;
+   color: #6c6f7f;
+}
+.commison-container .p2{
+   font-size: 20px;
+   color: #a0a3bd; 
+}
+.button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.button a:first-child{
+   border: 1px solid #22252e;
+   padding: 10px 20px;
+   font-size: 15px;
+   background-color: #7b61ff;
+   color: white;
+   font-weight: 600;
+   letter-spacing: 2px;
+}
+.button a:last-child{
+    border: 1px solid #22252e;
+   padding: 10px 20px;
+   font-size: 15px; 
+   font-weight: 600;
+   letter-spacing: 2px;
+}
+.button a:first-child:hover{
+      box-shadow:
+        inset 0 0 40px rgba(205, 161, 255, 0.4),
+        0 0 30px rgba(153, 101, 250, 0.4);
+    transition: 0.5s ease;
+   
+    
+}
+.button a:last-child:hover{
+     box-shadow:
+        inset 0 0 10px rgba(205, 161, 255, 0.4),
+        0 0 30px rgba(153, 101, 250, 0.4);
+    transition: 0.5s ease;
+    
+}
+
+/* commsion container ends here */
