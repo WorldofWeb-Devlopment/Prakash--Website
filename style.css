@@ -573,6 +573,12 @@ a {
 
 /* commsion container ends here */
 .footer p {
-    color: #5a43d6;
+    color: white;
     text-align: center;
+    margin-top: 10px;
+}
+#about,
+#portfolio,
+#contact{
+    scroll-margin-top: 90px;
 }
