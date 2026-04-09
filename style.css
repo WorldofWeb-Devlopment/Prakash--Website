@@ -371,9 +371,10 @@ a {
   transition: all 0.4s ease;
 }
 .img-details h2{
-    color: #5a43d6;
+    color: #7b61ff;
     text-transform: uppercase;
     font-size: 20px;
+    filter: drop-shadow(30px 10px 4px #000000);
 
 }
 .img-details p {
@@ -581,4 +582,85 @@ a {
 #portfolio,
 #contact{
     scroll-margin-top: 90px;
+}
+/* placing images in Portfolio section */
+.image1{
+    background-image: url(/image/1.jpeg);
+    background-size: cover;
+    opacity: 0.5; 
+    transition: all 0.5s ease-in;
+
+}
+.image1:hover{
+    opacity: 1;
+}
+.image2{
+    background-image: url(image/2.jpg);
+    background-size:cover;
+    opacity: 0.5; 
+    transition: all 0.5s ease-in;
+
+}
+.image2:hover{
+    opacity: 1;
+}
+.image3 {
+    background-image: url("../image/3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+      opacity: 0.5; 
+    transition: all 0.5s ease-in;
+}
+.image3:hover{
+    opacity: 1;
+}
+.image4 {
+    background-image: url("../image/4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+      opacity: 0.5; 
+    transition: all 0.5s ease-in;
+}
+.image4:hover{
+    opacity: 1;
+}
+.image5 {
+    background-image: url("../image/5.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+      opacity: 0.5; 
+    transition: all 0.5s ease-in;
+}
+.image5:hover{
+    opacity: 1;
+}
+.image6 {
+    background-image: url("../image/6.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+      opacity: 0.5; 
+    transition: all 0.5s ease-in;
+}
+.image6:hover{
+    opacity: 1;
+}
+.image7 {
+    background-image: url("../image/7.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+      opacity: 0.5; 
+    transition: all 0.5s ease-in;
+}
+.image7:hover{
+    opacity: 1;
+}
+.image8 {
+    background-image: url("../image/3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+      opacity: 0.5; 
+    transition: all 0.5s ease-in;
+}
+.image8:hover{
+    opacity: 1;
 }
